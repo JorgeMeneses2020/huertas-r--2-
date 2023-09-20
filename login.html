@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Página de inicio de sesión</title>
+    <link rel="stylesheet" type="text/css" href="./css/logueo.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Iniciar sesión</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <input type="text" id="username" placeholder="Correo electrónico" required>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <span class="show-password" onclick="togglePasswordVisibility()"></span>
+            </div>
+            <button type="submit">Iniciar sesión</button>
+            <p class="register-link">¿No tienes una cuenta? <a href="register.html">Regístrate aquí</a></p>
+        </form>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/sub.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="barral">
+            <h1>Menú</h1>
+            <h3>Ítems</h3>
+            <h4>Main</h4>
+            <ul id="menu">
+                <li><a href="./index.html">Principal</a></li>
+                <li><a href="subpagina.html">Dispositivos</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <header>
+                <div id="encabezado">
+                    <div id="logo">
+                        <img src="./img/computadora.png" alt="logo">
+                    </div>
+                    <h1>SISTEMA DE CONTROL</h1>
+                    <div id="escudo">
+                        <img src="./img/ESCUDO.jpg" alt="Escudo Nicolás Gaviria">
+                    </div>
+                </div>
+            </header>
+            <div class="registro-box">
+                <h4>Agregar Dispositivo</h4>
+                <p>Ingresa el nombre (alias) y el número de serie del dispositivo que quieres instalar:</p>
+                <form>
+                    <label for="alias">Alias:</label>
+                    <input type="text" id="alias" name="alias" placeholder="Ej: Casa Campo" required>
+
+                    <label for="serie">Serie:</label>
+                    <input type="text" id="serie" name="serie" placeholder="Ej: 777222" required>
+
+                    <button type="submit">Registrar</button>
+                </form>
+            </div>
+
+
+            <div class="tabla-container">
+
+                <div class="datos">
+                    <table>
+
+                        <tr>
+                            <th>Dispositivos</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <thead>
+
+                            <tr>
+                                <th>Alias</th>
+                                <th>Fecha</th>
+                                <th>Serie</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Huerta Nicolas Gaviria</td>
+                                <td>2023-07-10 12:51:46</td>
+                                <td>1111</td>
+                            </tr>
+
+                            <tr>
+                                <td>Huerta Granja</td>
+                                <td>2023-07-10 12:52:26</td>
+                                <td>334334</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+                    <form id="del-disp" action="">
+                        <h3>Selecciona el dispositivo:</h3>
+                        <select id="frutas">
+                            <option value="manzana">Manzana</option>
+                            <option value="naranja">Naranja</option>
+                            <option value="banana">Banana</option>
+                            <option value="uva">Uva</option>
+                            <option value="sandia">Sandía</option>
+                        </select>
+                        <br>
+                        <input type="button" class="eliminar-btn" value="Eliminar">
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
